@@ -35,12 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
         throw new Error(`Error: ${response.status}`);
       }
       const data = await response.json();
-
-      // Display the first 5 items in the API response
-      dataList.innerHTML = data
-        .slice(0, 5)
-        .map((item) => `<li>${item.title}</li>`)
-        .join("");
+      console.log(data);
     } catch (error) {
       console.error("Error fetching data:", error);
       alert("Failed to load data. Please try again.");

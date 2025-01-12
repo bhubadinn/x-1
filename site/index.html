@@ -8,6 +8,7 @@
     <title>My Web App</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <script src="https://unpkg.com/htmx.org"></script>
   </head>
   <body>
     <header>
@@ -34,13 +35,27 @@
 
       <section id="data">
         <h2>API Data</h2>
-        <button id="load-data-btn">Load Data</button>
-        <ul id="data-list"></ul>
+        <button
+          hx-get="/api/data"
+          hx-trigger="click"
+          hx-target="#data-list"
+          hx-swap="innerHTML"
+        >
+          Load Data
+        </button>
+        <ul id="data-list">
+          <!-- Data from the server will be dynamically loaded here -->
+        </ul>
       </section>
 
       <section id="contact">
         <h2>Contact</h2>
-        <form id="contact-form">
+        <form
+          id="contact-form"
+          hx-post="/submit-form"
+          hx-target="#contact-form-response"
+          hx-swap="innerHTML"
+        >
           <label for="name">Name:</label>
           <input type="text" id="name" name="name" required />
           <label for="email">Email:</label>
@@ -49,13 +64,14 @@
           <textarea id="message" name="message" required></textarea>
           <button type="submit">Send</button>
         </form>
+        <div id="contact-form-response">
+          <!-- Server response will appear here -->
+        </div>
       </section>
     </main>
 
     <footer>
       <p>&copy; 2025 MyWebApp. All Rights Reserved.</p>
     </footer>
-
-    <script src="script.js"></script>
   </body>
 </html>
