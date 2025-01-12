@@ -1,40 +1,60 @@
-body {
-  margin: 0;
-  padding: 2rem;
-  background-color: hsl(250, 24%, 9%);
-  color: hsl(0, 0%, 100%);
-  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
-    helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+/* Additional styles for the API Data section */
+#data {
+  margin-top: 2rem;
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+#data button {
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
 }
 
-h1 {
-  font-size: 48px;
-  margin: 1rem 0;
+#data button:hover {
+  background-color: #0056b3;
 }
 
-.logo {
-  width: 8rem;
-  height: 8rem;
-  margin-bottom: 2rem;
+#data ul {
+  list-style: none;
+  margin-top: 1rem;
+  padding: 0;
 }
 
-p {
-  line-height: 1.6;
+#data li {
+  background: #f4f4f9;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+/* Additional styles for the API Data section */
+#data {
+  margin-top: 2rem;
 }
 
-a {
-  color: hsl(270, 70%, 65%);
-  text-decoration: none;
+#data button {
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
 }
 
-a:hover {
-  text-decoration: underline;
+#data button:hover {
+  background-color: #0056b3;
+}
+
+#data ul {
+  list-style: none;
+  margin-top: 1rem;
+  padding: 0;
+}
+
+#data li {
+  background: #f4f4f9;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
 }
