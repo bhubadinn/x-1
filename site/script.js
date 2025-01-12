@@ -1,5 +1,7 @@
 // Add interactivity to your website
 document.addEventListener("DOMContentLoaded", () => {
+  console.log("Hellom World!");
+
   const form = document.getElementById("contact-form");
   const loadDataBtn = document.getElementById("load-data-btn");
   const dataList = document.getElementById("data-list");
