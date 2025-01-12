@@ -36,10 +36,11 @@
       <section id="data">
         <h2>API Data</h2>
         <button
-          hx-get="/api/data"
+          hx-get="https://jsonplaceholder.typicode.com/posts"
           hx-trigger="click"
           hx-target="#data-list"
           hx-swap="innerHTML"
+          id="load-data-btn"
         >
           Load Data
         </button>
