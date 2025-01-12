@@ -35,14 +35,13 @@
 
       <section id="data">
         <h2>API Data</h2>
-        <button id="load-data-btn">fetch()</button>
         <button
-          hx-get="https://jsonplaceholder.typicode.com/posts"
+          hx-get="/api/data"
           hx-trigger="click"
           hx-target="#data-list"
           hx-swap="innerHTML"
         >
-          htmx()
+          Load Data
         </button>
         <ul id="data-list">
           <!-- Data from the server will be dynamically loaded here -->
